@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - Ana meta etiketler
+  -->
+  <title>Navin Restoran</title>
+  <meta name="title" content="Navin Restoran">
+  <meta name="description" content="Bu bir restoran html şablonu, Navin tarafından yapılmıştır">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./reshot-icon.svg" type="image/svg+xml">
+
+
+  <!-- 
+    - google font bağlantısı
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+  <!-- 
+    - özel css bağlantısı
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - ön yükleme resimleri
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #ÖN YÜKLEYİCİ
+  -->
+
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">Navin</p>
+  </div>
+
+  <!-- 
+    - #ÜST ÇUBUK
+  -->
+
+  <div class="topbar" id="top">
+    <div class="container">
+
+      <address class="topbar-item">
+        <div class="icon">
+          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">
+          Kayabaşı mahallesi,Başakşehir/istanbul
+        </span>
+      </address>
+
+      <div class="separator"></div>
+
+      <div class="topbar-item item-2">
+        <div class="icon">
+          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">Günlük: 8.00 - 24.00</span>
+      </div>
+
+      <a href="tel:+11234567890" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">0555 025 25 25</span>
+      </a>
+
+      <div class="separator"></div>
+
+      <a href="mailto:navin@restaurant.com" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">rezervasyon@restaurant.com</span>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- 
+    - #BAŞLIK
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo1.svg" width="160" height="50" alt="Navin - Ana Sayfa">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="menüyü kapat" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logo1.svg" width="160" height="50" alt="Navin - Ana Sayfa">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+
+              <span class="span">Ana Sayfa</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#menu" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Menüler</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a  href="#hakkimizda" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Hakkımızda</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Şeflerimiz</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a  href="#iletisim" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">İletişim</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="text-center">
+          <p class="headline-1 navbar-title">Bizi Ziyaret Edin</p>
+
+          <address class="body-4">
+            Kayabaşı mahallesi <br>
+            Başakşehir/istanbul
+          </address>
+
+          <p class="body-4 navbar-text">Açık: 9.30 - 14.30</p>
+
+          <a href="mailto:navin@navin.com" class="body-4 sidebar-link">rezervasyon@navin.com</a>
+
+          <div class="separator"></div>
+
+          <p class="contact-label">Rezervasyon İsteği</p>
+
+          <a href="tel:05550252525" class="body-1 contact-number hover-underline">
+            0555 025 25 25
+          </a>
+        </div>
+
+      </nav>
+
+      <a href="#rezervasyon" class="btn btn-secondary">
+        <span class="text text-1">Rezervasyon Yap</span>
+
+        <span class="text text-2" aria-hidden="true">Rezervasyon Yap</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="menüyü aç" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #KAHRAMAN BÖLÜM
+      -->
+
+      <section class="hero text-center" aria-label="ana sayfa" id="home">
+
+        <ul class="hero-slider" data-hero-slider>
+
+          <li class="slider-item active" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-1.png" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">Geleneksel & Hijyenik</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Lezzetli yemeklerin <br>
+              aşkına
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Ailenizle gelin & ağız sulandıran yemeklerin keyfini çıkarın
+            </p>
+
+            <a href="#" class="btn btn-primary slider-reveal">
+              <span class="text text-1">Menümüzü Görüntüle</span>
+
+              <span class="text text-2" aria-hidden="true">Menümüzü Görüntüle</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-2.png" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">keyifli deneyim</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Mevsimlerden <br>
+              ilham alınan lezzetler
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Ailenizle gelin & ağız sulandıran yemeklerin keyfini çıkarın
+            </p>
+
+            <a href="#" class="btn btn-primary slider-reveal">
+              <span class="text text-1">Menümüzü Görüntüle</span>
+
+              <span class="text text-2" aria-hidden="true">Menümüzü Görüntüle</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-3.png" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">harika & lezzetli</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Her tat bir <br>
+              hikaye anlatır
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Ailenizle gelin & ağız sulandıran yemeklerin keyfini çıkarın
+            </p>
+
+            <a href="#" class="btn btn-primary slider-reveal">
+              <span class="text text-1">Menümüzü Görüntüle</span>
+
+              <span class="text text-2" aria-hidden="true">Menümüzü Görüntüle</span>
+            </a>
+
+          </li>
+
+        </ul>
+
+        <button class="slider-btn prev" aria-label="önceki slayta geç" data-prev-btn>
+          <ion-icon name="chevron-back"></ion-icon>
+        </button>
+
+        <button class="slider-btn next" aria-label="sonraki slayta geç" data-next-btn>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </button>
+
+        <a href="#" class="hero-btn has-after">
+          <img src="./assets/images/hero-icon.png" width="48" height="48" alt="rezervasyon simgesi">
+
+          <span class="label-2 text-center span">Masa Rezervasyonu Yap</span>
+        </a>
+
+      </section>
+<br><br>
+
+  <!-- 
+    - #ÖZEL YEMEK
+  -->
+
+  <section class="special-dish text-center" aria-labelledby="dish-label">
+
+    <div class="special-dish-banner">
+      <img src="./assets/images/ozel_yemek.png" width="940" height="900" loading="lazy" alt="özel yemek"
+        class="img-cover">
+    </div>
+
+    <div class="special-dish-content bg-black-10">
+      <div class="container">
+
+        <img src="./assets/images/badge-1.png" width="28" height="41" loading="lazy" alt="rozet" class="abs-img">
+
+        <p class="section-subtitle label-2">Özel Yemek</p>
+
+        <h2 class="headline-1 section-title">İskender Kebabı</h2>
+
+        <p class="section-text">
+          Döner etinin, yoğurt, tereyağı ve domates sosuyla servis edildiği yemek.
+        </p>
+
+        <div class="wrapper">
+          <del class="del body-3">₺390.00</del>
+
+          <span class="span body-1">₺260.00</span>
+        </div>
+
+        <a href="#" class="btn btn-primary">
+          <span class="text text-1">Tüm Menüyü Gör</span>
+
+          <span class="text text-2" aria-hidden="true">Tüm Menüyü Gör</span>
+        </a>
+
+      </div>
+    </div>
+
+    <img src="./assets/images/shape-4.png" width="179" height="359" loading="lazy" alt="" class="shape shape-1">
+
+    <img src="./assets/images/shape-9.png" width="351" height="462" loading="lazy" alt="" class="shape shape-2">
+
+  </section>
+<!-- 
+    - #MENÜ
+  -->
+  <section class="section menu" aria-label="menu-label" id="menu">
+    <div class="container">
+  
+      <p class="section-subtitle text-center label-2">Özel Seçim</p>
+  
+      <h2 class="headline-1 section-title text-center">Lezzetli Menü</h2>
+  
+      <ul class="grid-list">
+        <li>
+          <div class="menu-card hover:card">
+            <figure class="card-banner img-holder" style="--width: 100px; --height: 100px;">
+              <img src="./assets/images/1_kofte.jpeg" width="100" height="100" loading="lazy" alt="kofte" class="img-cover">
+            </figure>
+            <div>
+              <div class="title-wrapper">
+                <h3 class="title-3"><a href="#" class="card-title">Köfte</a></h3>
+                <!-- <span class="badge label-1">Mevsimlik</span> -->
+                <span class="span title-2">150,00₺</span>
+              </div>
+              <p class="card-text label-1">Domates, yeşil biber, dilimlenmiş salatalık, soğan, zeytin ve beyaz peynirle hazırlanan nefis köfte.</p>
+            </div>
+          </div>
+        </li>
+  
+        <li>
+          <div class="menu-card hover:card">
+            <figure class="card-banner img-holder" style="--width: 100px; --height: 100px;">
+              <img src="./assets/images/2_kebab.jpeg" width="100" height="100" loading="lazy" alt="Kebab" class="img-cover">
+            </figure>
+            <div>
+              <div class="title-wrapper">
+                <h3 class="title-3"><a href="#" class="card-title">Kebab</a></h3>
+                <span class="span title-2">180,00₺</span>
+              </div>
+              <p class="card-text label-1">Sebzeler, peynir, kıyma, domates sosu, baharatlar ve çeşnilerle hazırlanan lezzetli kebap.
+                </p>
+            </div>
+          </div>
+        </li>
+  
+        <li>
+          <div class="menu-card hover:card">
+            <figure class="card-banner img-holder" style="--width: 100px; --height: 100px;">
+              <img src="./assets/images/3_durum.jpeg" width="100" height="100" loading="lazy" alt="Dürüm" class="img-cover">
+            </figure>
+            <div>
+              <div class="title-wrapper">
+                <h3 class="title-3"><a href="#" class="card-title">Dürüm</a></h3>
+                <span class="span title-2">90,00₺</span>
+              </div>
+              <p class="card-text label-1">Farklı baharatlarla lezzetlendirilmiş et ve sebzelerin ince lavaşla sarılmasıyla hazırlanan dürüm.
+                </p>
+            </div>
+          </div>
+        </li>
+  
+        <li>
+          <div class="menu-card hover:card">
+            <figure class="card-banner img-holder" style="--width: 100px; --height: 100px;">
+              <img src="./assets/images/4_döner.jpeg" width="100" height="100" loading="lazy" alt="Döner" class="img-cover">
+            </figure>
+            <div>
+              <div class="title-wrapper">
+                <h3 class="title-3"><a href="#" class="card-title">Döner</a></h3>
+                <!-- <span class="badge label-1">Yeni</span> -->
+                <span class="span title-2">75,00₺</span>
+              </div>
+              <p class="card-text label-1">Taze sebzeler, peynir, kıyma, domates sosu ve baharatlarla servis edilen döner.
+              </p>
+            </div>
+          </div>
+        </li>
+  
+        <li>
+          <div class="menu-card hover:card">
+            <figure class="card-banner img-holder" style="--width: 100px; --height: 100px;">
+              <img src="./assets/images/5_icli_kofte.jpeg" width="100" height="100" loading="lazy" alt="İçli Köfte" class="img-cover">
+            </figure>
+            <div>
+              <div class="title-wrapper">
+                <h3 class="title-3"><a href="#" class="card-title">İçli Köfte</a></h3>
+                <span class="span title-2">100,00₺</span>
+              </div>
+              <p class="card-text label-1"> Kıyma, baharatlarla harmanlanmış ve nar gibi kızarmış ince bulgur dışıyla sarılı, nefis içli köfte.
+              </p>
+            </div>
+          </div>
+        </li>
+  
+        <li>
+          <div class="menu-card hover:card">
+            <figure class="card-banner img-holder" style="--width: 100px; --height: 100px;">
+              <img src="./assets/images/6_kunefe.jpeg" width="100" height="100" loading="lazy" alt="Künefe" class="img-cover">
+            </figure>
+            <div>
+              <div class="title-wrapper">
+                <h3 class="title-3"><a href="#" class="card-title">Künefe</a></h3>
+                <span class="span title-2">80,00₺</span>
+              </div>
+              <p class="card-text label-1">Şerbetli tatlı, özel peynir ve tereyağıyla yapılan çıtır çıtır künefe.
+              </p>
+            </div>
+          </div>
+        </li>
+  
+      </ul>
+  
+    </div>
+  </section>
+  
+
+ <br><br><br><br><br><br><br>
+<!-- 
+        - #REZERVASYON
+      -->
+
+      <section class="reservation">
+        <div id="rezervasyon" class="container">
+
+          <div class="form reservation-form bg-black-10">
+
+            <form action="" class="form-left">
+
+              <h2 class="headline-1 text-center">Online Rezervasyon</h2>
+
+              <p class="form-text text-center">
+                Rezervasyon talebi <a href="tel:+905550252525" class="link">0555 025 25 25</a>
+                veya sipariş formunu doldurun
+              </p>
+
+              <div class="input-wrapper">
+                <input type="text" name="name" placeholder="Adınız" autocomplete="off" class="input-field">
+
+                <input type="tel" name="phone" placeholder="Telefon Numarası" autocomplete="off" class="input-field">
+              </div>
+
+              <div class="input-wrapper">
+
+                <div class="icon-wrapper">
+                  <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                  <select name="person" class="input-field">
+                    <option value="1-person">1 Kişi</option>
+                    <option value="2-person">2 Kişi</option>
+                    <option value="3-person">3 Kişi</option>
+                    <option value="4-person">4 Kişi</option>
+                    <option value="5-person">5 Kişi</option>
+                    <option value="6-person">6 Kişi</option>
+                    <option value="7-person">7 Kişi</option>
+                    <option value="8-person">8 Kişi</option>
+                  </select>
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="icon-wrapper">
+                  <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+
+                  <input type="date" name="reservation-date" class="input-field">
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="icon-wrapper">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <select name="person" class="input-field">
+                    <option value="08:00am">08 : 00 am</option>
+                    <option value="09:00am">09 : 00 am</option>
+                    <option value="010:00am">10 : 00 am</option>
+                    <option value="011:00am">11 : 00 am</option>
+                    <option value="012:00am">12 : 00 am</option>
+                    <option value="01:00pm">01 : 00 pm</option>
+                    <option value="02:00pm">02 : 00 pm</option>
+                    <option value="03:00pm">03 : 00 pm</option>
+                    <option value="04:00pm">04 : 00 pm</option>
+                    <option value="05:00pm">05 : 00 pm</option>
+                    <option value="06:00pm">06 : 00 pm</option>
+                    <option value="07:00pm">07 : 00 pm</option>
+                    <option value="08:00pm">08 : 00 pm</option>
+                    <option value="09:00pm">09 : 00 pm</option>
+                    <option value="10:00pm">10 : 00 pm</option>
+                  </select>
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+              </div>
+
+              <textarea name="message" placeholder="Mesaj" autocomplete="off" class="input-field"></textarea>
+
+              <button type="submit" class="btn btn-secondary">
+                <span class="text text-1">Rezervasyon Yap</span>
+
+                <span class="text text-2" aria-hidden="true">Rezervasyon Yap</span>
+              </button>
+
+            </form>
+
+            <div class="form-right text-center" style="background-image: url('./assets/images/form-pattern.png')">
+
+              <h2 class="headline-1 text-center">Bize Ulaşın</h2>
+
+              <p class="contact-label">Rezervasyon Talebi</p>
+
+              <a href="tel:+905550252525" class="body-1 contact-number hover-underline">0555 025 25 25</a>
+
+              <div class="separator"></div>
+
+              <p class="contact-label">Konum</p>
+
+              <address class="body-4">
+                Kayabaşı mahallesi, <br>
+                Başakşehir/istanbul
+              </address>
+
+              <p class="contact-label">Öğle Yemeği Saati</p>
+
+              <p class="body-4">
+                Pazartesi - Pazar <br>
+                11.00 am - 2.30 pm
+              </p>
+
+              <p class="contact-label">Akşam Yemeği Saati</p>
+
+              <p class="body-4">
+                Pazartesi - Pazar <br>
+                05.00 pm - 10.00 pm
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+      <!-- 
+        - #ÖZELLİKLER
+      -->
+
+      <section  class="section features text-center" aria-label="özellikler">
+        <div id="hakkimizda" class="container">
+
+
+          <p class="section-subtitle label-2">Neden Bizi Seçmelisiniz</p>
+
+          <h2 class="headline-1 section-title">Güçlü Yönlerimiz</h2>
+
+          <ul class="grid-list">
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-1.png" width="100" height="80" loading="lazy" alt="ikon">
+                </div>
+
+                <h3 class="title-2 card-title">Hijyenik Yemek</h3>
+                <p class="label-1 card-text">Yemeklerimiz, yüksek hijyen standartlarına uygun olarak hazırlanır ve güvenliğiniz ön planda tutulur.</p>
+                
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-2.png" width="100" height="80" loading="lazy" alt="ikon">
+                </div>
+
+                <h3 class="title-2 card-title">Taze Ortam</h3>
+                <p class="label-1 card-text">Yemeklerimizin hazırlanışında kullanılan malzemeler her zaman taze ve kaliteli olup, sağlıklı bir ortamda hijyenik koşullar altında sunulmaktadır.</p>
+                
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-3.png" width="100" height="80" loading="lazy" alt="ikon">
+                </div>
+
+                <h3 class="title-2 card-title">Usta Şefler</h3>
+                <p class="label-1 card-text">Yemeklerimiz, alanında uzman ve deneyimli şeflerimiz tarafından, her zaman en yüksek kalite ve lezzet standartlarında hazırlanır.</p>
+                
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-4.png" width="100" height="80" loading="lazy" alt="ikon">
+                </div>
+
+                <h3 class="title-2 card-title">Etkinlik & Parti</h3>
+                <p class="label-1 card-text">Özel günleriniz, etkinlikleriniz ve partileriniz için özenle hazırladığımız menülerle misafirlerinize unutulmaz bir lezzet deneyimi sunuyoruz.</p>
+                
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="./assets/images/shape-7.png" width="208" height="178" loading="lazy" alt="şekil"
+            class="shape shape-1">
+
+          <img src="./assets/images/shape-8.png" width="120" height="115" loading="lazy" alt="şekil"
+            class="shape shape-2">
+
+        </div>
+      </section>
+ 
+
+<!-- 
+  - #ALT BİLGİ
+-->
+
+<footer class="footer section has-bg-image text-center" style="background-image: url('./assets/images/footer-bg.jpg')">
+  <div id="iletisim" class="container">
+
+    <div class="footer-top grid-list">
+
+      <div class="footer-brand has-before has-after">
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logo1.svg" width="160" height="50" loading="lazy" alt="Navin home">
+        </a>
+
+        <address class="body-4">
+          Kayabaşı mahallesi,Başakşehir/istanbul
+        </address>
+
+        <a href="mailto:navin@navin.com" class="body-4 contact-link">navin.com</a>
+
+        <a href="tel:05550252525" class="body-4 contact-link">Rezervasyon Talebi: 0555 025 25 25</a>
+
+        <p class="body-4">
+          Açık: 08:00 - 24:00
+        </p>
+
+        <div class="wrapper">
+          <div class="separator"></div>
+          <div class="separator"></div>
+          <div class="separator"></div>
+        </div>
+
+        <p class="title-1">Haberler & Teklifler Alın</p>
+
+        <p class="label-1">
+          Abone Olun ve <span class="span">%25 İndirim</span> Kazanın.
+        </p>
+
+        <form action="" class="input-wrapper">
+          <div class="icon-wrapper">
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+            <input type="email" name="email_address" placeholder="E-posta adresiniz" autocomplete="off" class="input-field">
+          </div>
+
+          <button type="submit" class="btn btn-secondary">
+            <span class="text text-1">Abone Ol</span>
+
+            <span class="text text-2" aria-hidden="true">Abone Ol</span>
+          </button>
+        </form>
+
+      </div>
+
+      <ul class="footer-list">
+
+        <li>
+          <a href="#top" class="label-2 footer-link hover-underline">Ana Sayfa</a>
+        </li>
+
+        <li>
+          <a href="#menu" class="label-2 footer-link hover-underline">Menüler</a>
+        </li>
+
+        <li>
+          <a href="#hakkimizda" class="label-2 footer-link hover-underline">Hakkımızda</a>
+        </li>        
+
+        <li>
+          <a href="#" class="label-2 footer-link hover-underline">Şeflerimiz</a>
+        </li>
+
+        <li>
+          <a href="#iletisim" class="label-2 footer-link hover-underline">İletişim</a>
+        </li>
+
+      </ul>
+
+      <ul class="footer-list">
+        <li>
+          <a href="https://facebook.com" class="label-2 footer-link hover-underline" target="_blank" rel="noopener noreferrer">Facebook</a>
+        </li>
+        
+        <li>
+          <a href="https://instagram.com" class="label-2 footer-link hover-underline" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </li>
+        
+        <li>
+          <a href="https://twitter.com" class="label-2 footer-link hover-underline" target="_blank" rel="noopener noreferrer">Twitter</a>
+        </li>
+        
+        <li>
+          <a href="https://youtube.com" class="label-2 footer-link hover-underline" target="_blank" rel="noopener noreferrer">YouTube</a>
+        </li>
+        
+        <li>
+          <a href="https://maps.google.com" class="label-2 footer-link hover-underline" target="_blank" rel="noopener noreferrer">Google Haritalar</a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <p class="copyright">
+        &copy; 2024 Navin. Tüm Hakları Saklıdır | <a href="https://github.com/AbdullahAkyuzz"
+          target="_blank" class="link">Abdullah Akyuz</a> tarafından yapıldı.
+      </p>
+
+    </div>
+
+  </div>
+</footer>
+
+<!-- 
+  - YUKARI ÇIK
+-->
+
+<a href="#top" class="back-top-btn active" aria-label="yukarı çık" data-back-top-btn>
+  <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+</a>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
