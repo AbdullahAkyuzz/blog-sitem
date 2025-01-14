@@ -1,0 +1,446 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2e3b4e;
+    color: white;
+    padding-top: 60px; /* Üst barın altında boşluk bırakır */
+}
+
+
+.ust-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #3c4a5e;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed; /* Üst barı sabitler */
+    top: 0; /* Sayfanın en üstüne yerleştirir */
+    left: 0; /* Sayfanın soluna yaslar */
+    width: 100%; /* Genişlik 100% olur */
+    z-index: 1000; /* Diğer öğelerin üstünde kalmasını sağlar */
+}
+
+.sol {
+    display: flex;
+    align-items: center;
+}
+
+.sol img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.sol span {
+    margin-left: 10px;
+}
+
+.sag {
+    display: flex;
+    align-items: center;
+}
+
+.sag a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.sag a:hover {
+    background-color: #57697d;
+}
+
+.dil-degistir {
+    margin-right: 10%; /* Sağdan boşluğu azaltarak sola çekiyoruz */
+}
+
+.dil-degistir img {
+    width: 20px;
+    height: 20px;
+    margin-right: 0; /* Sağdaki boşluğu kaldırıyoruz */
+    transition: transform 0.3s ease; /* Hover efekti için dönüşüm ekliyoruz */
+}
+
+.dil-degistir:hover img {
+    transform: scale(1.2); /* Hoverda simgeyi biraz büyütüyoruz */
+}
+
+
+
+
+#hakkimda {
+    padding: 20px;
+}
+
+.hakkimda-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hakkimda-yazi {
+    width: 60%;
+    padding-left: 10%;
+}
+
+.hakkimda-yazi p {
+    line-height: 1.6;
+}
+
+.hakkimda-resim img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.cv-indir {
+    display: inline-block;
+    background-color: rgb(75, 147, 230);
+    color: #ffffff;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cv-indir:hover {
+    background-color:#0056b3; /* Açık mavi hover rengi */
+}
+
+#bilgi-duzeyi {
+    margin-top: 30px;
+    padding-left: 10%;
+}
+
+.skill {
+    margin: 20px 0;
+}
+
+.skill span {
+    font-weight: bold;
+    display: inline-block;
+    width: 100px;
+}
+
+.progress-bar-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 50%; /* Bilgi düzeyini %50'ye indir */
+}
+
+/* Progress bar başlangıç durumu */
+.progress-bar {
+    height: 10px;
+    background-color: #4caf50;
+    border-radius: 5px;
+    width: 0%; /* Başlangıçta genişlik sıfır */
+    transition: width 2s ease-in-out; /* Animasyon ekleniyor */
+}
+
+/* Sayfa yüklendiğinde animasyonu başlatacak sınıf */
+.skill.active .progress-bar {
+    width: 100%; /* Animasyon ile genişleyecek */
+}
+
+.skill-percent {
+    position: absolute;
+    right: -35px;
+    color: rgb(150, 142, 142);
+    font-weight: bold;
+}
+/* Resmin düzeni */
+.skill-image img {
+    max-width: 200px; /* Resmin boyutunu ayarlayın */
+    height: auto;
+    margin-left: 20px; /* Yetenekler ile resim arasındaki boşluğu ayarlayın */
+}
+
+/* Projelerim */
+#projelerim {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.projeler-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.proje {
+    margin: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+.proje img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.proje img:hover {
+    transform: scale(1.05);
+}
+
+.proje h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.proje p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.proje a {
+    text-decoration: none;
+    color: #a1c9f1
+}
+
+.proje a:hover h3 {
+    color: #57697d;
+}
+
+/* İletişim */
+#iletisim {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.iletisim-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%; /* Sol ve sağ alana daha fazla boşluk ekledik */
+    flex-wrap: wrap; /* Responsive olması için */
+}
+
+.iletisim-form {
+    width: 48%; /* Formun genişliği %50'den biraz daha küçük yapıldı */
+    padding: 20px;
+    background-color: #3c4a5e;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Alt kısımdan boşluk ekledik */
+}
+
+/* İletişim başlığını formun üst kısmına ortaladık */
+.iletisim-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.iletisim-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.iletisim-form input,
+.iletisim-form textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    background-color: #e4e4e4;
+    color: #2e3b4e;
+}
+
+.iletisim-form textarea {
+    height: 100px;
+}
+
+.gonder-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.gonder-btn:hover {
+    background-color: #0056b3;
+}
+
+/* İletişim Bilgileri */
+.iletisim-bilgileri {
+    width: 48%; /* Sağdaki alanın genişliği */
+    padding: 20px;
+    background-color: #3c4a5e;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.iletisim-bilgileri h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.iletisim-bilgileri .bilgi-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.iletisim-bilgileri .bilgi-item img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.iletisim-bilgileri .bilgi-item p {
+    font-size: 16px;
+    color: #e4e4e4;
+}
+
+.iletisim-bilgileri .bilgi-item a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.iletisim-bilgileri .bilgi-item a:hover {
+    text-decoration: underline;
+}
+
+/* İkonları büyütme */
+i.fa {
+    font-size: 2rem; /* Burada istediğiniz büyüklükte ikon boyutu verebilirsiniz */
+    margin-right: 10px; /* İkon ile yazı arasına boşluk ekler */
+}
+
+/* İletişim Bilgileri Başlıkları için Stil (Boşluk için) */
+.iletisim-bilgileri p {
+    margin-left: 10px; /* Yazı ile ikon arasına boşluk ekler */
+}
+
+/* Bilgi düzeyi skalasında yüzdelerin görünürlüğü için */
+.bilgi-skalasi span {
+    color: #ffffff; /* Beyaz renk */
+}
+/* İletişim tablolarının arka planını daha açık mavi yap */
+.iletisim-form,
+.iletisim-bilgileri {
+    background-color: rgba(173, 216, 230, 0.8); /* Açık mavi */
+    padding: 10px;
+    border-radius: 5px;
+}
+/* Profil ismi */
+.sol span {
+    color: #000000; /* Beyaz */
+}
+
+/* Tablolardaki yazı renkleri */
+.iletisim-form label,
+.iletisim-form input,
+.iletisim-form textarea,
+.iletisim-bilgileri h3,
+.iletisim-bilgileri p {
+    color: #000000; /* Siyah yazı rengi (açık tema için) */
+}
+
+body.tema-acik .iletisim-form label,
+body.tema-acik .iletisim-form input,
+body.tema-acik .iletisim-form textarea,
+body.tema-acik .iletisim-bilgileri h3,
+body.tema-acik .iletisim-bilgileri p {
+    color: #ffffff; /* Beyaz yazı rengi (koyu tema için) */
+}
+
+/* Genel bağlantı tasarımı */
+.cv-indir {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Koyu Mod için Tasarım */
+body.koyu .cv-indir {
+    background-color: #007BFF; /* Mavi arka plan */
+    color: #ffffff; /* Beyaz yazı */
+}
+
+body.koyu .cv-indir:hover {
+    background-color: #0056b3; /* Daha koyu mavi */
+}
+
+/* Açık Mod için Tasarım */
+body.acik .cv-indir {
+    background-color: #E0F7FA; /* Açık mavi arka plan */
+    color: #007BFF; /* Mavi yazı */
+}
+
+body.acik .cv-indir:hover {
+    background-color: #B2EBF2; /* Daha koyu açık mavi */
+}
+footer {
+
+    background-color: #2e3b4e;/* Arka plan rengi ekledim */
+}
+
+.alt-bilgi-container {
+    text-align: center;
+    /* Aynı arka plan rengini alt kısmına da ekledim */
+    padding: 10px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10%; /* Linkler arasında %10 boşluk bırakır */
+    margin-left: 35%; /* Soldan %20 boşluk bırakır */
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #cec5c5;
+    font-size: 16px;
+}
+.footer-links a:hover{
+    color: #000000;
+}
+
+
+.copyright p {
+    font-size: 14px;
+    color:  #cec5c5;
+    margin-top: 10px; /* Biraz boşluk ekledim */
+}
+/* Koyu tema için CSS */
+body.koyu-mod {
+    background-color: #2e3b4e;
+    color: white;
+}
+
+body.acik-mod {
+    background-color: #f0f0f0;
+    color: black;
+}
+
+/* Açık modda üst barın rengi */
+.acik-mod .ust-bar {
+    
+    color: black;
+}
+
+/* Koyu modda üst barın rengi */
+.koyu-mod .ust-bar {
+    background-color: #3c4a5e;
+    color: white;
+}
+

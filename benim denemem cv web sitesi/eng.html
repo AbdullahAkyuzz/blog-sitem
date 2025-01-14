@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog Website</title>
+        <link rel="stylesheet" href="style.css">
+    
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+<body>
+    <div class="ust-bar">
+        <!-- Left side -->
+        <div class="sol">
+            <img src="img/Adsız tasarım.png" alt="Profile Picture">
+            <span>Abdullah Akyüz</span>
+        </div>
+
+        <div class="sag">
+            <a href="#about" class="about-me-link">About Me</a>
+            <a href="#projects" class="projects-link">Projects</a>
+            <a href="#contact" class="contact-link">Contact</a>
+            <a href="#dark-mod" class="dark-mod">Light Mode</a>
+            <div class="dil-degistir">
+                <a href="index.html" id="dil-buton">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg" alt="Turkish" style="width: 25px; height: auto;"  id="lang-switcher">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <section id="about">
+        <div class="hakkimda-container">
+            <div class="hakkimda-yazi">
+                <h2>About Me</h2>
+                <p>Hello, I'm Abdullah Akyüz. With my passion for technology and learning, I constantly focus on improving myself. In addition to my academic studies, I aim to gain a broader perspective through individual projects and teamwork. I am knowledgeable in technologies such as Python, HTML, CSS, and Unity, and I continuously strive to enhance my skills in these areas. My goal is to contribute to innovative projects and become a better developer every day.</p>
+                <a href="cv.pdf" download="Abdullah_Akyuz_CV" class="cv-indir">Download CV</a>
+            </div>
+            <div class="hakkimda-resim">
+                <img src="img/ilk resim.png" alt="Software Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="bilgi-duzeyi">
+    <h3>My Skills in Programming Languages</h3>
+
+        <div class="skill">
+            <span>Python</span>
+            <div class="progress-bar-container">
+                <div class="progress-bar" style="width: 75%"></div>
+                <span class="skill-percent">85%</span>
+            </div>
+        </div>
+        <div class="skill">
+            <span>HTML</span>
+            <div class="progress-bar-container">
+                <div class="progress-bar" style="width: 85%"></div>
+                <span class="skill-percent">95%</span>
+            </div>
+        </div>
+        <div class="skill">
+            <span>CSS</span>
+            <div class="progress-bar-container">
+                <div class="progress-bar" style="width: 80%"></div>
+                <span class="skill-percent">90%</span>
+            </div>
+        </div>
+        <div class="skill">
+            <span>Unity</span>
+            <div class="progress-bar-container">
+                <div class="progress-bar" style="width: 70%"></div>
+                <span class="skill-percent">80%</span>
+            </div>
+        </div>
+        <div class="skill">
+            <span>SQL</span>
+            <div class="progress-bar-container">
+                <div class="progress-bar" style="width: 55%"></div>
+                <span class="skill-percent">60%</span>
+            </div>
+        </div>
+        <div class="skill">
+            <span>JavaScript</span>
+            <div class="progress-bar-container">
+                <div class="progress-bar" style="width: 65%"></div>
+                <span class="skill-percent">70%</span>
+            </div>
+        </div>
+        <div class="skill">
+            <span>Flutter</span>
+            <div class="progress-bar-container">
+                <div class="progress-bar" style="width: 55%"></div>
+                <span class="skill-percent">60%</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projeler-container">
+            <!-- Project 1 -->
+            <div class="proje">
+                <a href="Navin js olan/index.html" target="_blank">
+                    <img src="Navin js olan/ekran goruntusu.png" alt="Restaurant">
+                    <h3>Restaurant Website</h3>
+                </a>
+                <p>Navin Restaurant is a user-friendly website developed with HTML, CSS, and JavaScript, showcasing restaurant menus and services.</p>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="proje">
+                <a href="https://www.proje2.com" target="_blank">
+                    <img src="img/e ticaret ekran goruntusu.png" alt="E-commerce">
+                    <h3>E-commerce Application</h3>
+                </a>
+                <p>This e-commerce application, developed with Flutter, allows users to explore and list products in various categories.</p>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="proje">
+                <a href="https://github.com/AbdullahAkyuzz/Construct-2-/tree/main" target="_blank">
+                    <img src="img/silah ekran goruntusu.jpg" alt="Defense Game">
+                    <h3>Defense Game</h3>
+                </a>
+                <p>Developed with Unity and Construct 2, this defense game is a strategy game where players defend against enemy waves.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="iletisim-container">
+            <!-- Form -->
+            <div class="iletisim-form">
+                <h2>Contact</h2>
+                <form action="mailto:akyuz4751@gmail.com" method="post" enctype="text/plain">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Enter Your E-mail Address" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Write Your Message" required></textarea>
+
+                    <button type="submit" class="gonder-btn">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="iletisim-bilgileri">
+                <h3>Contact Information</h3>
+                <p>Feel free to reach out with any questions or collaboration requests!</p>
+                <div class="bilgi-item">
+                    <h3>Abdullah Akyüz</h3>
+                </div>
+                <div class="bilgi-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p><a href="mailto:akyuz4751@gmail.com">akyuz4751@gmail.com</a></p>
+                </div>
+                <div class="bilgi-item">
+                    <i class="fa-brands fa-github"></i>
+                    <p><a href="https://github.com/AbdullahAkyuzz" target="_blank">GitHub</a></p>
+                </div>
+                <div class="bilgi-item">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <p><a href="https://www.linkedin.com/in/abdullah-aky%C3%BCz-447923335/" target="_blank">linkedin.com/in/abdullah-akyüz</a></p>
+                </div>
+                <div class="bilgi-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <p><a href="#" target="_blank">+90 551 097 26 12</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+
+        <!-- Footer -->
+<footer>
+    <div class="alt-bilgi-container">
+        <div class="footer-links">
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+    <div class="copyright">
+        <p>&copy; 2025 Abdullah Akyüz. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
