@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2? family= Mukta:wght@400;700 & family= Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700; 1,200;1,300;1,400;1,500;1,600;1,700;1,800 ve görüntüleme=takas");
+@import url("https://fonts.googleapis.com/css2? aile= Istakoz &family= Mukta:wght@400;700 & display=swap");
+:root {
+  --main-color: #b9ece0;
+  --black-color: black;
+  --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+}
+html {
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+body {
+  background-color: beige;
+  background-size: cover;
+  font-family: "popins", sans-serif;
+  height: 100vh;
+}
+a {
+  color: "beige";
+}
+#conteiner {
+  width: 90%;
+  margin: auto;
+  background-color: #c7f1effd;
+}
+
+/*Header start*/
+header {
+  height: 100px;
+  border-bottom: 2px solid #fff;
+}
+header {
+  height: 100px;
+  border-bottom: 2px solid rgba(248, 248, 248, 0.6);
+  padding: 0 7%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 7%;
+  border-radius: 30px;
+  box-shadow: 0px 0px 17px -2px rgb(0, 0, 0, 0.75);
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+}
+header nav .logo a {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 700;
+  color: rgba(240, 238, 232, 0.651);
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  column-gap: 25px;
+}
+nav ul a {
+  text-decoration: none;
+  color: #706e66;
+}
+nav .header-menu {
+  display: flex;
+  align-items: center;
+}
+.menu ul li a {
+  text-decoration: none;
+  list-style: none;
+  color: #706e66;
+  font-size: 1rem;
+  margin: 0 1rem;
+  position: relative;
+  left: 280px;
+}
+.menu ul li a:hover {
+  border-color: var(--black-color);
+  border-bottom: 0.1rem solid transparent;
+  padding-bottom: 0.5rem;
+  color: var(--black-color);
+}
+
+.logo img {
+  border: 2px solid rgb(97, 222, 247);
+  width: 95px;
+  height: 95px;
+  border-radius: 999rem;
+}
+.secenek {
+  display: flex;
+  column-gap: 45px;
+  position: relative;
+  top: 110px;
+}
+.müze img {
+  border: 2px solid rgb(97, 222, 247);
+  width: 300px;
+  height: 300px;
+  border-radius: 999rem;
+  position: relative;
+  left: 210px;
+}
+.kafe img {
+  border: 2px solid rgb(97, 222, 247);
+  width: 300px;
+  height: 300px;
+  border-radius: 999rem;
+  position: relative;
+  left: 210px;
+}
+.gezi img {
+  border: 2px solid rgb(97, 222, 247);
+  width: 300px;
+  height: 300px;
+  border-radius: 999rem;
+  position: relative;
+  left: 210px;
+}
+/*footer start*/
+
+.footer {
+  background-color: var(--black-color);
+  text-align: center;
+  height: 153px;
+  position: relative;
+  top: 284px;
+}
+.footer .share {
+  padding: 1rem 0;
+}
+.footer .share a {
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  color: white;
+  font-size: 1rem;
+  border: var(--border);
+  border-radius: 50%;
+  margin: 0.3rem;
+  text-decoration: none;
+}
+.footer .share a:hover {
+  background-color: var(--main-color);
+}
+
+.footer .links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 20px;
+}
+
+.footer .links a {
+  background-color: var(--black-color);
+  padding: 0.3rem 1rem;
+  color: #fff;
+  font-size: 14px;
+  border: var(--border);
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.footer .links a:hover {
+  background-color: var(--main-color);
+  opacity: 0.7;
+}
+
+.footer .links a.avtive {
+  background-color: var(--black-color);
+}
+
+.footer .telifhakki {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 300;
+  padding-top: 1.5rem;
+}
+
+/*footer end*/
